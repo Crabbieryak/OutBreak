@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Outbreak</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+
+<div id="hud">
+
+<h2 id="username"></h2>
+
+<p id="xp"></p>
+
+<p id="coins"></p>
+
+</div>
+
+
+
+<div id="playersPanel">
+
+<h3>Players</h3>
+
+<div id="playersList"></div>
+
+</div>
+
+
+
+
+<div id="squadPanel">
+
+<h3>Squad</h3>
+
+<div id="squadInfo">
+
+No Squad
+
+</div>
+
+<button id="createSquad">
+
+Create Squad
+
+</button>
+
+</div>
+
+
+
+
+<div id="missionsPanel">
+
+<h3>🎯 Missions</h3>
+
+<div id="missions"></div>
+
+</div>
+
+
+
+
+<div id="invitePanel">
+
+<h3>Invitation</h3>
+
+<p id="inviteText"></p>
+
+<button id="acceptInvite">
+
+Accept
+
+</button>
+
+<button id="rejectInvite">
+
+Reject
+
+</button>
+
+</div>
+
+
+
+
+<div id="requestPanel">
+
+<h3>Join Request</h3>
+
+<p id="requestText"></p>
+
+<button id="approveRequest">
+
+Approve
+
+</button>
+
+<button id="denyRequest">
+
+Deny
+
+</button>
+
+</div>
+
+
+
+
+<div id="map"></div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="storage.js"></script>
+<script src="player.js"></script>
+<script src="outposts.js"></script>
+<script src="missions.js"></script>
+
+<script src="script.js"></script>
+<script src="drops.js"></script>
+<script src="squad.js"></script>
+
+</body>
+
+</html>
