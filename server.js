@@ -383,38 +383,30 @@ squads
 
 
 
-socket.on(
-
-"disconnect",
-
-()=>{
-
+socket.on("disconnect",()=>{
 
 delete players[socket.id];
 
-
-io.emit(
-
-"players",
-
-players
-
-);
-
-
-}
-
-
-);
-
+io.emit("players",players);
 
 });
+
+});
+
 
 app.get("/",(req,res)=>{
 
 res.sendFile(__dirname+"/index.html");
 
 });
+
+
+app.get("/test",(req,res)=>{
+
+res.send("SERVER WORKS");
+
+});
+
 
 const PORT = process.env.PORT || 3000;
 
